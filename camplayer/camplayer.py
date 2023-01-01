@@ -247,10 +247,10 @@ def main():
                 # Non numeric key, clear numeric num_array
                 num_array.clear()
 
-                if event.code == KEYCODE.KEY_RIGHT:
+                if event.code == KEYCODE.KEY_RIGHT or event.code == KEYCODE.KEY_FASTFORWARD:
                     screenmanager.on_action(Action.SWITCH_NEXT)
 
-                elif event.code == KEYCODE.KEY_LEFT:
+                elif event.code == KEYCODE.KEY_LEFT or event.code == KEYCODE.KEY_REWIND:
                     screenmanager.on_action(Action.SWITCH_PREV)
 
                 elif event.code == KEYCODE.KEY_UP:
@@ -262,13 +262,13 @@ def main():
                 elif event.code == KEYCODE.KEY_ENTER or event.code == KEYCODE.KEY_KPENTER:
                     screenmanager.on_action(Action.SWITCH_SINGLE, 0)
 
-                elif event.code == KEYCODE.KEY_ESC or event.code == KEYCODE.KEY_EXIT:
+                elif event.code == KEYCODE.KEY_ESC or event.code == KEYCODE.KEY_EXIT or event.code == KEYCODE.KEY_BACK:
                     screenmanager.on_action(Action.SWITCH_GRID)
 
-                elif event.code == KEYCODE.KEY_SPACE:
+                elif event.code == KEYCODE.KEY_SPACE or event.code == KEYCODE.KEY_PLAYPAUSE:
                     screenmanager.on_action(Action.SWITCH_PAUSE_UNPAUSE)
 
-                elif event.code == KEYCODE.KEY_D:
+                elif event.code == KEYCODE.KEY_D or event.code == KEYCODE.KEY_MENU:
                     screenmanager.on_action(Action.SWITCH_DISPLAY_CONTROL)
 
                 elif event.code == KEYCODE.KEY_Q and not ignore_quit:

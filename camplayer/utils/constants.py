@@ -43,6 +43,12 @@ class KEYCODE(object):
     KEY_UP                  = 103
     KEY_DOWN                = 108
     KEY_ESC                 = 1
+    KEY_MENU                = 139
+    KEY_BACK                = 158
+    KEY_HOMEPAGE            = 172
+    KEY_PLAYPAUSE           = 164
+    KEY_REWIND              = 168
+    KEY_FASTFORWARD         = 208
     KEY_EXIT                = 174
     KEY_ENTER               = 28
     KEY_KPENTER             = 96
